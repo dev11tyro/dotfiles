@@ -12,6 +12,11 @@ ln -sb dotfiles/.bashrc .
 ln -sb dotfiles/.bashrc_custom .
 mv .emacs.d .emacs.d~
 ln -s dotfiles/.emacs.d .
+ln -sb dotfiles/.tmux.conf .
+cp .config/Terminal/terminalrc .config/Terminal/terminalrc~
+cp dotfiles/xfce4-terminal-colors-solarized/dark/terminalrc \
+	.config/Terminal/
+
 ```
 
 See also http://github.com/startup-class/setup to install prerequisite

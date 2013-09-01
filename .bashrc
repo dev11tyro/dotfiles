@@ -187,6 +187,8 @@ alias md='mkdir'
 alias cl='clear'
 alias du='du -ch --max-depth=1'
 alias treeacl='tree -A -C -L 2'
+alias tree='tree -C'
+alias wtf='watch -n 1 w -hs'
 
 # 2.3) Text and editor commands
 alias em='emacs -nw'     # No X11 windows
