@@ -9,7 +9,7 @@
 #    3) .bash_profile imports .bashrc, but not vice versa.
 #    4) .bashrc imports .bashrc_custom, which can be used to override
 #        variables specified here.
-#           
+#
 # When using GNU screen:
 #
 #    1) .bash_profile is loaded the first time you login, and should be used
@@ -194,7 +194,7 @@ alias wtf='watch -n 1 w -hs'
 alias em='emacs -nw'     # No X11 windows
 alias eqq='emacs -nw -Q' # No config and no X11
 export EDITOR='emacs -nw'
-export VISUAL='emacs -nw' 
+export VISUAL='emacs -nw'
 
 # 2.4) grep options
 export GREP_OPTIONS='--color=auto'
@@ -227,3 +227,5 @@ fi
 
 ## Define any user-specific variables you want here.
 source ~/.bashrc_custom
+
+PATH="$HOME/bin:$PATH

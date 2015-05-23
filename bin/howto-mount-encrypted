@@ -1,0 +1,4 @@
+# udisksctl unclock -b /dev/sda5
+# udisksctl mount -b /dev/mapper/################
+
+# ls /media/user/###

@@ -1,0 +1,17 @@
+
+(defun cider-namespace-refresh ()
+  (interactive)
+  (cider-interactive-eval
+   "(require 'clojure.tools.namespace.repl)
+    (clojure.tools.namespace.repl/refresh)"))
+
+(defun cider-namespace-refresh-all ()
+  (interactive)
+  (cider-interactive-eval
+   "(require 'clojure.tools.namespace.repl)
+    (clojure.tools.namespace.repl/refresh-all)"))
+
+(define-key clojure-mode-map (kbd "<f10>") 'cider-namespace-refresh)
+(define-key clojure-mode-map (kbd "<f9>") 'cider-namespace-refresh-all)
+(global-set-key (kbd "<f8>") 'save-buffer)
+
